@@ -17,6 +17,7 @@ const main = (
 
   while (c) {
     let j = before.indexOf(c)
+    console.log(`Номер правила ${j} => Lenta ${L}`)
     let m = L.match(c)[1]
     let r = L.replace(c, after[j])
     L = r.replace(/x/g, m)
